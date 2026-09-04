@@ -1,12 +1,10 @@
-Britney
-Asante
-this is a test<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <body>
 
 <h1>My first heading</h1>
 <p>My first paragraph.</p>
-<p style="color:red;">This is Chelsea</p>
+<p style="color:orange;">This is Chelsea</p>
 
 
 <a href="https://www.youtube.com/watch?v=vIoO52MdZFE&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s&index=3">This is a link</a>
@@ -14,3 +12,4 @@ this is a test<!DOCTYPE html>
 
 </body>
 </html>
+>>>>>>> Stashed changes
