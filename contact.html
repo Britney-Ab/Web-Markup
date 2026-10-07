@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<head>
+    <title> Contact Us</title> 
+</head>
+<body> 
+    <h1> Contact Us</h1>
+    <form action="http://next-app-router-playground-kohl.vercel.app/api/contact"
+     method="post">
+        <p>
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="50" placeholder="John Doe"/>
+        </p>
+        <p>
+            <label for="email"> Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required placeholder="john@gmail.com"/>
+        </p>
+        <p>
+            <label for="message"> Message:</label>
+            <br>
+            <textarea name="message" id="message"></textarea>
+        </p>
+        <p>
+            <button type="i agree to the privacy policy">I agree to the privacy policy</button>
+        </p>
+        <p>
+            <button type="send message">Send Message</button>
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Student name: Britney Abena Asante 
+Student number: 756580
+Student class: HAIT26FTIA
+GitHub Repository: https://github.com/Britney-Ab/Web-Markup
+GitHub Pages URL: https://britney-ab.github.io/Web-Markup/
