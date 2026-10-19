@@ -1,20 +1,210 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>My first heading</h1>
-        <p>My first paragraph.</p>
+<html lang="en">
 
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<h1 class="emphasis">My first heading</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Britney Asante">
+    <meta name="description" content="Explore Almere through architecture, nature, shopping and public buildings.">
+    <meta name="keywords" content="Almere, architecture, nature, shopping, city">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Home | Explore The City</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/jpeg" href="img/almere-mainlogo.jpg">
+   
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <header class="site-header">
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="logo">
+                <img src="img/almere-mainlogo.jpg"
+                     alt="Almere"
+                     title="Explore Almere">
+            </a>
+
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href ="architecture.html">Architecture</a></li>
+                <li><a href="nature.html">Water &amp; Nature</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="government.html">Government</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Main image and introduction-->
+        <section class="hero">
+            <figure>
+                <img src="img/almere-city.jpg" 
+                     alt="Modern buidings in Almere city Centre"
+                     title="Welcome to Almere">
+            </figure>
+
+            <article>
+                <h1>WELCOME TO ALMERE!</h1>
+
+                <p> 
+                 Explore one of the newest cities in the Netherlands. Almere is a special destination <strong>modern architecture, beautiful nature, shopping and entertainment</strong> come together.
+                </p>
+
+                <a href="#discover" class="button">Explore Almere</a>
+            </article>
+        </section>
+
+        <!--Introduction of Almere-->
+        <section id="discover" class="highlights">
+             <h2>Discover Almere</h2>
+
+             <section class="card-container">
+                <article class="card">
+                    <figure>
+                        <img src="img/architecture.jpg"
+                             alt="Modern buidings in Almere"
+                             title="Architecture in Almere">
+                        <figcaption>Modern architecture</figcaption>
+                    </figure>
+
+                    <h3>Architecture</h3>
+                    <p> Explore <em>unique modern buildings</em>.</p>
+                    <a href="architecture.html">Discover More &rarr;</a>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <img src="img/nature.jpg"
+                             alt="Lake in Almere"
+                             title="Water and Nature">
+                        <figcaption>Nature in Almere</figcaption>
+                    </figure>
+
+                     <h3>Water &amp; Nature</h3>
+                     <p> Discover lakes and parks.</p>
+                     <a href="nature.html">Discover More &rarr;</a>
+                </article>
+
+
+                <article class="card">
+                    <figure>
+                        <img src="img/shopping.jpg"
+                             alt="Shopping centre in Almere"
+                             title="Shopping and Entertainment">
+                        <figcaption>Shopping in Almere</figcaption>
+                    </figure>
+
+                     <h3>Shopping &amp; Entertainment</h3>
+                     <p> Enjoy shopping, food and activities.</p>
+                     <a href="shopping.html">Discover More &rarr;</a>
+                </article>
+
+                 <article class="card">
+                    <figure>
+                        <img src="img/government.jpg"
+                             alt="Public building in Almere"
+                             title="Government and Public Buildiings">
+                        <figcaption>Public buildings</figcaption>
+                    </figure>
+
+                     <h3>Government &amp; Public Buildings</h3>
+                     <p> Explore the city's public landmarks.</p>
+                     <a href="government.html">Discover More &rarr;</a>
+                </article>
+
+                </section>
+         </section>
+
+         <section class="city-overview">
+    <h2>Explore Almere at a Glance</h2>
+
+    <table>
+        <caption>Discover what Almere has to offer</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Category</th>
+                <th scope="col">What to Explore</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Architecture</td>
+                <td>Modern buildings and creative designs</td>
+            </tr>
+            <tr>
+                <td>Water &amp; Nature</td>
+                <td>Lakes, parks and cycling routes</td>
+            </tr>
+            <tr>
+                <td>Shopping</td>
+                <td>Restaurants, shops and entertainment</td>
+            </tr>
+            <tr>
+                <td>Government</td>
+                <td>City Hall and public buildings</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </main>
+
+    <!--Footer-->
+    <footer class="site-footer">
+
+        <section class="footer-container">
+
+            <article class="footer-about">
+                <img src="img/almere-logo.jpg"
+                     alt="Almere"
+                     class="footer-logo"
+                     title="Almere logo">
+                </article>
+
+                <article class="footer-contact">
+                    <h2>Have a Question?</h2>
+                    <p>We would love to hear from you!</p>
+                    <a href="contact.html" class="button">
+                        Contact Us
+                    </a> 
+                </article>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+            <h2>Quick Links</h2>
             
-        </header>
-    </body>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href ="architecture.html">Architecture</a></li>
+                <li><a href="nature.html">Water &amp; Nature</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="government.html">Government</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+            <aside class="footer-social">
+               <h2>Follow Us</h2>
+               <a href="https://x.com" aria-label="X">X</a>
+               <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
+               <a href="https://youtube.com" aria-label="YouTube">YouTube</a>
+              <a href="https://linkedin.com" aria-label="LinkedIn">LinkedIn</a>
+            </aside>
+         </section>
+        <p class="copyright">
+            &copy; 2026 Britney Abena | All rights reserved | Privacy Policy | Disclaimer | Almere - Explore The City
+        </p>
+    </footer>
+
+    <aside class="cookie-message" aria-label="Cookie notice">
+    <p>
+        Cookie notice: This student website does not
+        intentionally use tracking cookies.
+    </p>
+</aside>
+</body>
 </html>

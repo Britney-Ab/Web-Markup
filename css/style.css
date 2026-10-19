@@ -1,0 +1,1855 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #153B48;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    word-spacing: 0.08em;
+}
+
+a {
+    color: #153B48;
+}
+
+a:hover {
+    color: #087E82;
+}
+
+a:active {
+    color: #A54D2A;
+}
+
+/* HEADER AND NAVIGATION */
+
+.site-header {
+    position: relative;
+    background-color: #153B48;
+    color: #E9F3F0;
+    z-index: 10;
+}
+
+.site-header nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    color: #E9F3F0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+.logo img {
+    display: block;
+    width: auto;
+    height: 55px;
+    max-width: 160px;
+    object-fit: contain;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: #E9F3F0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: #A5DED5;
+}
+
+.navigation a:active {
+    color: #ffffff;
+}
+
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+    background-color: #E9F3F0;
+}
+
+.hero figure {
+    margin: 0;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero figcaption {
+    padding: 0.5rem 2rem;
+    font-size: 0.8rem;
+    color: #153B48;
+    text-align: center;
+}
+
+.hero article {
+    max-width: 800px;
+    margin: auto;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #153B48;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.hero p {
+    color: #153B48;
+    font-size: 1.1rem;
+}
+
+/* BUTTONS */
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.6rem;
+    background-color: #153B48;
+    color: #E9F3F0;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #24566A;
+    color: #ffffff;
+}
+
+/* DISCOVER ALMERE SECTION */
+
+.highlights {
+    max-width: 1200px;
+    margin: auto;
+    padding: 4rem 2rem;
+}
+
+.highlights h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+    color: #153B48;
+}
+
+/* CATEGORY CARDS */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #E9F3F0;
+    border: 1px solid #B8D1CA;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+}
+
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.card figcaption {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem;
+    color: #153B48;
+}
+
+.card h3 {
+    margin: 1rem 1.5rem;
+    color: #153B48;
+    font-size: 1.3rem;
+}
+
+.card p {
+    margin: 0.5rem 1.5rem;
+    color: #153B48;
+}
+
+.card a {
+    display: inline-block;
+    margin: 1rem 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #153B48;
+}
+
+.card a:hover {
+    color: #087E82;
+    text-decoration: underline;
+}
+
+.card h3::first-letter {
+    color: #087E82;
+}
+
+.card img[src="img/nature.jpg"] {
+    object-position: center 75%;
+}
+
+/* CONTACT SECTION */
+
+.contact-banner {
+    background-color: #153B48;
+    color: #E9F3F0;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.contact-banner h2 {
+    color: #E9F3F0;
+    margin-top: 0;
+}
+
+.contact-banner .button {
+    background-color: #E9F3F0;
+    color: #153B48;
+}
+
+.contact-banner .button:hover {
+    background-color: #ffffff;
+}
+
+/* FOOTER */
+
+.site-footer {
+    background-color: #153B48;
+    color: white;
+    padding: 3rem 2rem 1.5rem; 
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.footer-container > * {
+    min-width: 0;
+}
+
+/*FOOTER HEADINGS */
+
+.site-footer h2 {
+    color: #E9F3F0;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.footer-about img {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+    mix-blend-mode: screen;
+}
+
+.footer-about p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+/* FOOTER CONTACT */
+
+.footer-contact p {
+    font-size: 0.85rem;
+}
+
+.footer-contact .button {
+    display: inline-block;
+    background-color: #E9F3F0;
+    color: #153B48;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-contact .button:hover {
+    background-color: #ffffff;
+    color: #153B48;
+}
+
+/* FOOTER QUICK LINKS */
+
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-footer li {
+    margin-bottom: 0.4rem;
+}
+
+.site-footer a {
+    color: #E9F3F0;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #A5DED5;
+}
+
+/* SOCIAL MEDIA ICONS */
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-social .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #E9F3F0;
+    color: #153B48;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.footer-social .social-icons a:hover {
+    background-color: #ffffff;
+    color: #087E82;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/* COPYRIGHT */
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+}
+
+/* FOOTER TABLET RESPONSIVENESS */
+
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* FOOTER MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .site-footer {
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-social .social-icons {
+        justify-content: flex-start;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+    }
+}
+
+/* HOMEPAGE AND NAVIGATION - MOBILE */
+
+@media screen and (max-width: 768px) {
+
+    .site-header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navigation {
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .hero img {
+        height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero article {
+        padding: 2rem 1rem;
+    }
+
+    .highlights {
+        padding: 2rem 1rem;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================
+ARCHITECTURE PAGE 
+===================*/
+
+/* ARCHITECTURE HERO SECTION */
+
+.architecture-hero {
+    position: relative;
+    width: 100%;
+    background-color: #E9F3F0;
+    overflow: hidden;
+}
+
+.architecture-hero > img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* TEXT ON THE HERO IMAGE */
+
+.architecture-intro {
+    position: absolute;
+    left: 5%;
+    bottom: 8%;
+    max-width: 450px;
+    padding: 1.5rem;
+    background-color: rgba(21, 59, 72, 0.8);
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.architecture-intro h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    max-width: 330px;
+}
+
+.architecture-intro p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* KUNSTLINIE SECTION */
+
+.kunstline-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.kunstline-images {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+    align-items: start;
+    width: 100%;
+}
+
+.kunstline-images figure {
+    margin: 0;
+    min-width: 0;
+}
+
+.kunstline-images img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.kunstline-images figcaption {
+    font-size: 0.85rem;
+    color: #153B48;
+    margin-top: 0.5rem;
+}
+
+/* KUNSTLINIE TEXT */
+
+.kunstline-text {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #E9F3F0;
+    border-radius: 6px;
+}
+
+.kunstline-text h2 {
+    font-size: 1.8rem;
+    color: #153B48;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.kunstline-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #153B48;
+    text-indent: 1rem;
+    margin-bottom: 0;
+}
+
+/* MORE ARCHITECTURAL BUILDINGS */
+
+.architecture-buildings {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
+
+.architecture-buildings > h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #153B48;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* BUILDING CARDS */
+
+.architecture-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.architecture-card {
+    background-color: #E9F3F0;
+    border-color: #B8D1CA;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+}
+
+.architecture-card figure {
+    margin: 0;
+}
+
+.architecture-card img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.architecture-card figcaption {
+    font-size: 0.85rem;
+    padding: 0.5rem 1.5rem;
+    color: #153B48;
+}
+
+.architecture-card h3 {
+    font-size: 1.4rem;
+    color: #153B48;
+    margin: 1rem 1.5rem;
+}
+
+.architecture-card h3::first-letter {
+    color: #087E82;
+}
+
+.architecture-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0.5rem 1.5rem;
+    color: #153B48;
+}
+
+/* TABLET RESPONSIVENESS */
+
+@media screen and (max-width: 1024px) {
+
+    .architecture-hero > img {
+        height: 420px;
+    }
+
+    .architecture-intro {
+        max-width: 400px;
+    }
+
+    .architecture-intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .kunstline-images {
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    .architecture-card img {
+        height: 240px;
+    }
+}
+
+/* SMARTPHONE RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+
+    .architecture-hero > img {
+        height: 280px;
+    }
+
+    .architecture-intro {
+        position: static;
+        max-width: none;
+        padding: 2rem 1.5rem;
+        background-color: #153B48;
+        border-radius: 0;
+    }
+
+    .architecture-intro h1 {
+        font-size: 2rem;
+        max-width: none;
+    }
+
+    .architecture-intro p {
+        font-size: 0.95rem;
+    }
+
+    .kunstline-section {
+        padding: 2rem 1rem;
+    }
+
+    .kunstline-images {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .kunstline-images img {
+        height: auto;
+        max-height: 350px;
+        object-fit: cover;
+    }
+
+    .kunstline-text {
+        padding: 1.5rem;
+    }
+
+    .kunstline-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .architecture-buildings {
+        padding: 2rem 1rem;
+    }
+
+    .architecture-buildings > h2 {
+        font-size: 1.6rem;
+    }
+
+    .architecture-card-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .architecture-card img {
+        height: 230px;
+    }
+
+    .architecture-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* =====================================
+   WATER AND NATURE PAGE
+   ===================================== */
+
+/* NATURE HERO */
+
+.nature-hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #153B48;
+}
+
+.nature-hero > img {
+    display: block;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nature-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    max-width: 430px;
+    padding: 1.5rem;
+    color: #ffffff;
+    background-color: rgba(21, 59, 72, 0.45);
+}
+
+.nature-discover {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 0.3rem;
+}
+
+.nature-hero-text h1 {
+    color: #ffffff;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    max-width: 360px;
+    margin: 0 0 1.5rem;
+}
+
+.nature-hero-text p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* MAIN NATURE CONTENT */
+
+.nature-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #E9F3F0;
+}
+
+/* EXPLORE THE OUTDOORS */
+
+.nature-heading {
+    margin-bottom: 2rem;
+}
+
+.nature-heading h2 {
+    color: #153B48;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin: 0 0 0.5rem;
+}
+
+.nature-heading p {
+    color: #153B48;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0;
+}
+
+/* FOUR NATURE CARDS */
+
+.nature-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3.5rem 0.5rem;
+}
+
+.nature-card {
+    background-color: #E9F3F0;
+    border-color: #B8C9C5;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+}
+
+.nature-card figure {
+    margin: 0;
+}
+
+.nature-card img {
+    display: block;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    object-position: center 75%;
+}
+
+.nature-card figcaption {
+    font-size: 0.85rem;
+    color: #153B48;
+    padding: 0.5rem 1rem 0;
+    font-weight: 600;
+}
+
+.nature-card-text {
+    padding: 0.5rem 1rem 1.5rem;
+}
+
+.nature-card-text h3 {
+    color: #153B48;
+    font-size: 1.1rem;
+    margin: 0 0 0.4rem;
+}
+
+.nature-card-text p {
+    color: #153B48;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* HOVER EFFECT */
+
+.nature-card:hover {
+    border-color: #153B48;
+}
+
+.nature-card a:hover {
+    color: #087E82;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 1024px) {
+
+    .nature-hero > img {
+        height: 400px;
+    }
+
+    .nature-hero-text h1 {
+        font-size: 2.3rem;
+    }
+
+    .nature-card img {
+        height: 220px;
+    }
+}
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 768px) {
+
+    .nature-hero > img {
+        height: 280px;
+    }
+
+    .nature-hero-text {
+        position: static;
+        transform: none;
+        max-width: none;
+        padding: 2rem 1.5rem;
+        background-color: #153B48;
+    }
+
+    .nature-hero-text h1 {
+        font-size: 2rem;
+        max-width: none;
+    }
+
+    .nature-discover {
+        font-size: 1.1rem;
+    }
+
+    .nature-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .nature-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .nature-heading p {
+        font-size: 1rem;
+    }
+
+    .nature-card-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .nature-card img {
+        height: 230px;
+    }
+
+    .nature-card-text h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* =====================================
+   SHOPPING AND ENTERTAINMENT PAGE
+   ===================================== */
+
+/* SHOPPING HERO */
+
+.shopping-hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #153B48;
+}
+
+.shopping-hero > img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.shopping-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    max-width: 490px;
+    padding: 1.5rem;
+    color: #ffffff;
+    background-color: rgba(21, 59, 72, 0.35);
+}
+
+.shopping-hero-text h1 {
+    color: #ffffff;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    max-width: 420px;
+    margin: 0 0 1.5rem;
+}
+
+.shopping-hero-text p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* SHOPPING CONTENT */
+
+.shopping-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 5rem;
+    background-color: #E9F3F0;
+}
+
+/* HORIZONTAL SHOPPING CARDS */
+
+.shopping-place {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    min-height: 300px;
+    margin-bottom: 1.5rem;
+    background-color: #E9F3F0;
+    overflow: hidden;
+    border: 1px solid #AFC7C1;
+}
+
+.shopping-place-image {
+    margin: 0;
+    min-width: 0;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.shopping-place-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.shopping-place-image figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.4rem 0.8rem;
+    background-color: rgba(21, 59, 72, 0.85);
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+/* CARD TEXT */
+
+.shopping-place-text {
+    padding: 1.5rem 2rem;
+}
+
+.shopping-symbol {
+    display: block;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 0.6rem;
+}
+
+.shopping-place-text h2 {
+    color: #153B48;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+}
+
+.shopping-place-text p {
+    color: #153B48;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 1rem;
+}
+
+.shopping-place-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* ASSESSMENT CSS FEATURES */
+
+.shopping-place:hover {
+    border-color: #153B48;
+}
+
+.shopping-place:nth-child(even) {
+    border-width: 2px;
+}
+
+.shopping-place-text h2::first-letter {
+    color: #087E82;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 1024px) {
+
+    .shopping-hero > img {
+        height: 420px;
+    }
+
+    .shopping-hero-text h1 {
+        font-size: 2.3rem;
+    }
+
+    .shopping-place-text {
+        padding: 1.2rem;
+    }
+
+    .shopping-place-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .shopping-place-text p {
+        font-size: 0.95rem;
+    }
+}
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 768px) {
+
+    .shopping-hero > img {
+        height: 280px;
+    }
+
+    .shopping-hero-text {
+        position: static;
+        transform: none;
+        max-width: none;
+        padding: 2rem 1.5rem;
+        background-color: #153B48;
+    }
+
+    .shopping-hero-text h1 {
+        font-size: 2rem;
+        max-width: none;
+    }
+
+    .shopping-hero-text p {
+        font-size: 1rem;
+    }
+
+    .shopping-content {
+        padding: 1.5rem 1rem 3rem;
+    }
+
+    .shopping-place {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+
+    .shopping-place-image {
+        height: 230px;
+        min-height: 0;
+    }
+
+    .shopping-place-image img {
+        height: 100%;
+    }
+
+    .shopping-place-text {
+        padding: 1.5rem;
+    }
+
+    .shopping-place-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .shopping-symbol {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* =====================================
+   GOVERNMENT AND PUBLIC BUILDINGS PAGE
+   ===================================== */
+
+/* HERO SECTION */
+
+.government-hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #153B48;
+}
+
+.government-hero > img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.government-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    max-width: 490px;
+    padding: 1.5rem;
+    background-color: rgba(21, 59, 72, 0.25);
+}
+
+.government-hero-text h1 {
+    color: #153B48;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin: 0 0 2rem;
+}
+
+.government-hero-text p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* MAIN CONTENT */
+
+.government-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem 5rem;
+    background-color: #E9F3F0;
+}
+
+/* INTRODUCTION */
+
+.government-heading {
+    padding: 0 1rem 1.5rem;
+}
+
+.government-heading h2 {
+    color: #153B48;
+    font-size: 2rem;
+    line-height: 1.3;
+    margin: 0 0 1rem;
+}
+
+.government-heading p {
+    color: #153B48;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* CITY HALL FEATURE */
+
+.government-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+    border-color: #AFC7C1;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.government-feature figure {
+    margin: 0;
+    min-width: 0;
+    position: relative;
+}
+
+.government-feature img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.government-feature figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.4rem 0.8rem;
+    background-color: rgba(21, 59, 72, 0.85);
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.government-feature-text {
+    padding: 2rem;
+}
+
+.government-feature-text h2 {
+    color: #153B48;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin: 0 0 1.5rem;
+}
+
+.government-feature-text p {
+    color: #153B48;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 1.5rem;
+}
+
+/* MORE PUBLIC BUILDINGS */
+
+.government-more {
+    margin-top: 2rem;
+}
+
+.government-more > h2 {
+    color: #153B48;
+    font-size: 1.8rem;
+    margin: 0 0 1.5rem;
+}
+
+/* FOUR BUILDING CARDS */
+
+.government-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem 1rem;
+}
+
+.government-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+    border-color: #AFC7C1;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.government-card figure {
+    margin: 0;
+    min-width: 0;
+    position: relative;
+}
+
+.government-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 240px;
+    object-fit: cover;
+}
+
+.government-card figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.3rem 0.5rem;
+    background-color: rgba(21, 59, 72, 0.85);
+    color: #ffffff;
+    font-size: 0.7rem;
+}
+
+.government-card-text {
+    padding: 1.2rem;
+    align-self: center;
+}
+
+.government-card-text h3 {
+    color: #153B48;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin: 0 0 1rem;
+}
+
+.government-card-text p {
+    color: #153B48;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* HOVER EFFECT */
+
+.government-card:hover {
+    border-color: #153B48;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 1024px) {
+
+    .government-hero > img {
+        height: 420px;
+    }
+
+    .government-hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .government-card-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .government-card img {
+        min-height: 220px;
+    }
+}
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 768px) {
+
+    .government-hero > img {
+        height: 280px;
+    }
+
+    .government-hero-text {
+        position: static;
+        transform: none;
+        max-width: none;
+        padding: 2rem 1.5rem;
+        background-color: #153B48;
+    }
+
+    .government-hero-text h1 {
+        color: #ffffff;
+        font-size: 2rem;
+    }
+
+    .government-content {
+        padding: 1.5rem 1rem 3rem;
+    }
+
+    .government-heading h2 {
+        font-size: 1.6rem;
+    }
+
+    .government-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .government-feature img {
+        height: 230px;
+        min-height: 0;
+    }
+
+    .government-feature-text {
+        padding: 1.5rem;
+    }
+
+    .government-feature-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .government-card {
+        grid-template-columns: 1fr;
+    }
+
+    .government-card img {
+        height: 220px;
+        min-height: 0;
+    }
+
+    .government-card-text {
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+/* =====================================
+   CONTACT PAGE
+   ===================================== */
+
+/* CONTACT HERO */
+
+.contact-hero {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+.contact-hero img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center 75%;
+}
+
+/* CONTACT INTRODUCTION */
+
+.contact-introduction {
+    max-width: 1100px;
+    margin: 2rem auto 1.5rem;
+    padding: 0 1rem;
+}
+
+.contact-introduction h1 {
+    text-align: center;
+    color: #153B48;
+    font-size: 2.8rem;
+    margin: 0 0 0.5rem;
+}
+
+.contact-introduction p {
+    color: #153B48;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* CONTACT TWO COLUMN LAYOUT */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    max-width: 1100px;
+    margin: 0 auto 5rem;
+    padding: 0 1rem;
+    align-items: start;
+}
+
+/* LEFT CONTACT INFORMATION */
+
+.contact-information {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-color: #153B48;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.contact-information h2 {
+    color: #153B48;
+    font-size: 2rem;
+    margin: 0 0 0.5rem;
+    text-align: center;
+}
+
+.contact-information > p {
+    text-align: center;
+    color: #153B48;
+    font-size: 1rem;
+    margin: 0 0 1rem;
+}
+
+/* CONTACT INFORMATION CARDS */
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.contact-info-card {
+    background-color: #E9F3F0;
+    padding: 1rem;
+    min-height: 170px;
+    border-radius: 4px;
+}
+
+.contact-icon {
+    display: block;
+    color: #153B48;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info-card h3 {
+    color: #153B48;
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem;
+}
+
+.contact-info-card p {
+    color: #153B48;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0 0 0.3rem;
+}
+
+.contact-info-card a {
+    color: #153B48;
+    text-decoration: none;
+}
+
+.contact-info-card a:hover {
+    text-decoration: underline;
+}
+
+/* SOCIAL MEDIA */
+
+.contact-social {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.contact-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: #E9F3F0;
+    color: #153B48;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.contact-social a:hover {
+    background-color: #153B48;
+    color: #ffffff;
+}
+
+/* RIGHT CONTACT FORM */
+
+.contact-form-section {
+    background-color: #E9F3F0;
+    padding: 1.5rem;
+    border-color: #153B48;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.contact-form-section h2 {
+    color: #153B48;
+    font-size: 1.6rem;
+    margin: 0 0 0.5rem;
+}
+
+.contact-form-section > p {
+    color: #153B48;
+    font-size: 0.95rem;
+    margin: 0 0 1rem;
+}
+
+.contact-form-section fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+.contact-form-section legend {
+    font-size: 0.9rem;
+    color: #153B48;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.contact-form-section label {
+    display: block;
+    color: #153B48;
+    font-size: 0.95rem;
+    margin: 0.8rem 0 0.3rem;
+}
+
+.contact-form-section select,
+.contact-form-section input[type="text"],
+.contact-form-section input[type="email"],
+.contact-form-section textarea {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #ffffff;
+    border-color: #C9D8D4;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+}
+
+.contact-form-section textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form-section input:focus,
+.contact-form-section select:focus,
+.contact-form-section textarea:focus {
+    outline: 2px solid #153B48;
+    outline-offset: 2px;
+}
+
+/* SUBMIT BUTTON */
+
+.contact-submit {
+    display: block;
+    width: 55%;
+    margin: 1.5rem auto 0;
+    padding: 0.8rem 1rem;
+    background-color: #153B48;
+    color: #ffffff;
+    border-color: #153B48;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.contact-submit:hover {
+    background-color: #245968;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 1024px) {
+
+    .contact-hero img {
+        height: 350px;
+    }
+
+    .contact-introduction p {
+        font-size: 1.3rem;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 768px) {
+
+    .contact-hero {
+        margin-top: 1rem;
+    }
+
+    .contact-hero img {
+        height: 230px;
+    }
+
+    .contact-introduction {
+        margin: 1.5rem auto;
+    }
+
+    .contact-introduction h1 {
+        font-size: 2rem;
+    }
+
+    .contact-introduction p {
+        font-size: 1.1rem;
+    }
+
+    .contact-layout {
+        padding: 0 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact-information,
+    .contact-form-section {
+        padding: 1rem;
+    }
+
+    .contact-information h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info-card {
+        min-height: 0;
+    }
+
+    .contact-submit {
+        width: 100%;
+    }
+}
+
+/* COOKIE MESSAGE */
+
+.cookie-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #153B48;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    border-top: 2px solid #A5DED5;
+}
+
+.cookie-message p {
+    margin: 0;
+}
+
+/* ASSESSMENT TABLE */
+
+.city-overview {
+    max-width: 900px;
+    margin: 2rem auto 4rem;
+    padding: 0 1rem;
+}
+
+.city-overview h2 {
+    text-align: center;
+}
+
+.city-overview table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.city-overview caption {
+    padding: 0.8rem;
+    font-weight: 600;
+}
+
+.city-overview th,
+.city-overview td {
+    padding: 1rem;
+    border: 1px solid #B8D1CA;
+    text-align: left;
+}
+
+.city-overview th {
+    background-color: #153B48;
+    color: #ffffff;
+}
+
+.city-overview tbody tr:nth-child(even) {
+    background-color: #CFF;
+}
+
+.city-overview tbody tr:nth-child(odd) {
+    background-color: #FFF;
+}
+
+/* FLOATING FOOTER LOGO */
+
+.footer-about .footer-logo {
+    float: left;
+    margin-right: 1rem;
+}
